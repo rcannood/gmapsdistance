@@ -1,5 +1,5 @@
-#Personal comments
-*PERSCOMMENTS
-*.Rproj
-
 .Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+tmp
