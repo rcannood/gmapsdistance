@@ -1,5 +1,9 @@
-#.travis.yml for gmpsdistance
 language: r
 sudo: required
+dist: trusty
+cache: packages
+warnings_are_errors: true
+r_github_packages:
+ - r-lib/covr
 after_success:
-  - coveralls --exclude lib --exclude tests --gcov-options '\-lp'
+ - R -e 'covr::codecov()'
